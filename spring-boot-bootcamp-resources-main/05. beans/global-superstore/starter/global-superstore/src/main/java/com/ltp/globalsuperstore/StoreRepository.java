@@ -3,9 +3,14 @@ package com.ltp.globalsuperstore;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class StoreRepository {
     
-    private List<Item> items = new ArrayList<>();
+    @Autowired
+    private List<Item> items;
 
     public Item getItem(int index) {
         return items.get(index);
