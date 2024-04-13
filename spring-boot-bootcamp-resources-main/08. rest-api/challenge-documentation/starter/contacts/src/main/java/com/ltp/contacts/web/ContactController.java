@@ -57,5 +57,4 @@ public class ContactController {
         contactService.saveContact(contact);
         return new ResponseEntity<>(contact, HttpStatus.CREATED);
     }
-
 }
